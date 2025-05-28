@@ -1,5 +1,0 @@
-variable "filename" {
-}
-
-variable "content" {
-}

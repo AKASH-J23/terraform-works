@@ -1,3 +1,0 @@
-    This is my first module which was created within
-    multiple lines for better practice. 
-    Some random content to work on with

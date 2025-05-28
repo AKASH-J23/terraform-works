@@ -1,4 +1,0 @@
-Addition: 29
-Power: 390625
-Maximum: 25
-Sign: -1

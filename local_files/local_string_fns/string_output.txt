@@ -1,0 +1,7 @@
+Original : "   Hello Terraform 123!   "
+Trimmed  : "Hello Terraform 123!"
+Lowercase: "hello terraform 123!"
+Uppercase: "HELLO TERRAFORM 123!"
+Replaced : "Hello Akash 123!"
+Length   : "20"
+Substring: "Terraform"
