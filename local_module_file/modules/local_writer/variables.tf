@@ -1,0 +1,5 @@
+variable "filename" {
+}
+
+variable "content" {
+}
