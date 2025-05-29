@@ -1,0 +1,4 @@
+  ARN: arn:aws:s3:::jeebumba
+  prefix: jeebumba.s3.amazonaws.com
+  id: jeebumba
+  lock: false
