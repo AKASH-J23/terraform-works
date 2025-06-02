@@ -4,6 +4,7 @@
 # Ignore all tfstate and backup files recursively
 **/*.tfstate
 **/*.tfstate.backup
+**/*.backup
 
 # Ignore crash logs anywhere
 **/crash.log

@@ -1,0 +1,3 @@
+    bucketName: terraform-uhjiklq-bucket
+    arn: arn:aws:s3:::terraform-uhjiklq-bucket
+    details: false
