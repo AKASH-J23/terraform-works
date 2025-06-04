@@ -34,4 +34,34 @@ resource "aws_instance" "instance_creation" {
     instance_type = "t2.micro"
     key_name = module.aws_key_pair_generation.aws_key_pair_name
     vpc_security_group_ids = [ aws_security_group.generating_security_group.id ]
+
+    provisioner "file" {
+        source = "sample.txt"
+        destination = "/home/ubuntu/sample.txt"
+
+        connection {
+          type = "ssh"
+          user = "ubuntu"
+          private_key = module.aws_key_pair_generation.private_key
+          host = self.public_ip
+        }
+    }
+    
+    provisioner "remote-exec" {
+        inline = [ 
+            "cd /home/ubuntu/",
+            "cat sample.txt"
+        ]
+
+        connection {
+          type = "ssh"
+          user = "ubuntu"
+          private_key = module.aws_key_pair_generation.private_key
+          host = self.public_ip
+        }
+    }
+
+    provisioner "local-exec" {
+      command = "echo EC2 created successfully"
+    }
 }
