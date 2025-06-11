@@ -1,8 +1,8 @@
 resource "aws_iam_access_key" "access_key_creation" {
     user = var.name
-    lifecycle {
-        prevent_destroy = true
-    }
+    # lifecycle {
+    #     prevent_destroy = true
+    # }
 }
 
 resource "local_file" "secret_key" {
